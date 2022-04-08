@@ -54,7 +54,7 @@ def main():
 
     if mode == "1":
         sock = socket()
-        sock.connect((host, port))
+        sock.bind((host, port))
 
         try:
             sock.listen(5)
